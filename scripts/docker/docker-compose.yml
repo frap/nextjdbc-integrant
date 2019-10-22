@@ -1,0 +1,13 @@
+---
+
+version: "3.7"
+services:
+
+  postgis:
+    image: mdillon/postgis
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: simple
+      POSTGRES_USER: simple
+      POSTGRES_PASSWORD: password

@@ -1,0 +1,10 @@
+{:ig/system {:simple.db/datasource {:dbtype "postgres"
+                                    :dbname "simple"
+                                    :host "localhost"
+                                    :username "simple"
+                                    :password "password"}
+
+             :simple.migration/migration {:datasource #ig/ref :simple.db/datasource
+                                          :migration-locations ["db/migration/postgresql"]}
+
+             :simple.operations/operations {:after #ig/ref :simple.migration/migration}}}
