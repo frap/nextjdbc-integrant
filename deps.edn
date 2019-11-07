@@ -6,15 +6,11 @@
         com.zaxxer/HikariCP {:mvn/version "3.4.1"}
         honeysql {:mvn/version "0.9.8"}
         integrant {:mvn/version "0.7.0"}
-        org.clojure/tools.cli {:mvn/version "0.4.2"}
         org.clojure/tools.logging {:mvn/version "0.5.0"}
         org.postgresql/postgresql {:mvn/version "42.2.8"}
-        org.flywaydb/flyway-core {:mvn/version "6.0.6"}
-        org.slf4j/jcl-over-slf4j {:mvn/version "1.7.28"}
-        org.slf4j/jul-to-slf4j {:mvn/version "1.7.28"}
-        org.slf4j/log4j-over-slf4j {:mvn/version "1.7.28"}
+        org.flywaydb/flyway-core {:mvn/version "6.0.8"}
+        org.slf4j/jcl-over-slf4j {:mvn/version "1.7.29"}
+        org.slf4j/jul-to-slf4j {:mvn/version "1.7.29"}
+        org.slf4j/log4j-over-slf4j {:mvn/version "1.7.29"}
         ring/ring-jetty-adapter {:mvn/version "1.7.1"}
-        seancorfield/next.jdbc {:mvn/version "1.0.9"}}
-
- :mvn/repos {"central" {:url "http://nexus.itbts.net/repository/maven-public/"}
-             "confluent" {:url "https://packages.confluent.io/maven/"}}}
+        seancorfield/next.jdbc {:mvn/version "1.0.9"}}}
