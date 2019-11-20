@@ -11,16 +11,16 @@
 (Thread/setDefaultUncaughtExceptionHandler
  (reify Thread$UncaughtExceptionHandler
    (uncaughtException [_ thread ex]
-     (log/errorf "Uncaught exception on [%s]." (.getName thread))
+     (log/errorf "Exception non interceptée sur [%s]." (.getName thread))
      (log/errorf ex))))
-
-(def system nil)
 
 (defn my-spy
   [message]
   (log/info message))
 
 (add-tap my-spy)
+
+(def system nil)
 
 (let [lock (Object.)]
   (defn load-namespaces
